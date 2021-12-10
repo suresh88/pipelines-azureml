@@ -21,7 +21,7 @@ steps:
     azureSubscription: $(ml-ws-connection)
     scriptLocation: inlineScript
     scriptType: 'bash'
-    inlineScript: 'az extension add --name azure-cli-ml --debug'
+    inlineScript: 'az extension add -n azure-cli-ml --version 1.23.0'
 
 - task: AzureCLI@2
   displayName: 'Attach folder to workspace'
